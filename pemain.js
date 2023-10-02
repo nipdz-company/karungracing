@@ -17,6 +17,7 @@ class pemain{
   }
   finish(){
     if(this.x>width-100) {
+      finish.play()
       fill(this.warna)
       textSize(50)
       textAlign(CENTER)
