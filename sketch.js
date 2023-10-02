@@ -18,9 +18,9 @@ function setup(){
 
 function draw(){
   background(1000,1000,1000)
+  background(bg)
   
-  garis(100,50)
-  garis(width-100,50)
+
   
   pemain1.tampilkan()
   pemain2.tampilkan()
@@ -32,8 +32,10 @@ function draw(){
 function keyPressed(){
   if(keyCode === LEFT_ARROW){
     pemain1.maju()
+    jump.play()
   }
   else if(keyCode === RIGHT_ARROW){
     pemain2.maju()
+    jump.play()
   }
 }
