@@ -1,3 +1,5 @@
+let jump;
+let finish;
 let x,y
 let pemain1, pemain2
 function garis(x1, y1){
