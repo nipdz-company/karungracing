@@ -6,10 +6,12 @@ function garis(x1, y1){
   line(x1, y1)
 }
 
-function garis(x,y){
-  line(x,y,x, height-y)
+function preload(){
+  soundformats('mp3')
+  jump = loadSound('jump.mp3')
+  finish = loadSound('finish.mp3')
+  bg = loadImage('background.png')
 }
-
 
 function setup(){
   createCanvas(600,400);
@@ -21,11 +23,11 @@ function setup(){
 function draw(){
   background(1000,1000,1000)
   background(bg)
-  
-
+  garis(100,50)
+  garis(width-100,50)
   
   pemain1.tampilkan()
-  pemain2.tampilkan()
+  pemain2.tampilkan() 
   
   pemain1.finish()
   pemain2.finish()
