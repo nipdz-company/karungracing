@@ -24,6 +24,5 @@ class pemain{
       text('FINISH', width/2 , height/2)
       noLoop()
     }
-  }
-  
+  } 
 }
