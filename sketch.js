@@ -2,12 +2,14 @@ let jump;
 let finish;
 let x,y
 let pemain1, pemain2
-function garis(x1, y1){
-  line(x1, y1)
+let bg
+
+function garis(x, y){
+  line(x, y, x, height-y)
 }
 
 function preload(){
-  soundformats('mp3')
+  soundFormats('mp3')
   jump = loadSound('jump.mp3')
   finish = loadSound('finish.mp3')
   bg = loadImage('background.png')
@@ -23,7 +25,7 @@ function setup(){
 function draw(){
   background(1000,1000,1000)
   background(bg)
-  garis(100,50)
+  garis(80,40)
   garis(width-100,50)
   
   pemain1.tampilkan()
