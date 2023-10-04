@@ -13,13 +13,15 @@ function preload(){
   jump = loadSound('jump.mp3')
   finish = loadSound('finish.mp3')
   bg = loadImage('background.png')
+  p1 = loadImage('player1.png')
+  p2 = loadImage('player2.png')
 }
 
 function setup(){
   createCanvas(600,400);
   
-  pemain1 = new pemain(100, 'red')
-  pemain2 = new pemain(300, 'blue')
+  pemain1 = new pemain(90, p1)
+  pemain2 = new pemain(200, p2)
 }
 
 function draw(){

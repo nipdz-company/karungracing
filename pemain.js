@@ -1,15 +1,14 @@
 class pemain{
-  constructor(y,warna){
-    this.d = 40
-    this.warna = color(warna)
-    this.x = 50
+  constructor(y,img){
+    this.size = 80
+    this.img = img
+    this.x = 10
     this.y = y
     this.speed = 10
   }
   
   tampilkan(){
-    fill(this.warna)
-    circle(this.x, this.y,this.d)
+    image(this.img, this.x, this.y, this.size, this.size)
   }
   
   maju(){
