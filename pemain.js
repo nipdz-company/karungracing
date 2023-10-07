@@ -17,7 +17,7 @@ class pemain{
   finish(){
     if(this.x>width-100) {
       finish.play()
-      fill(this.warna)
+      fill(this.img)
       textSize(50)
       textAlign(CENTER)
       text('FINISH', width/2 , height/2)
